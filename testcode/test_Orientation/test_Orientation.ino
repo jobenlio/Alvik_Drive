@@ -13,13 +13,11 @@ void loop() {
   static int i = 0;
   i>49? i = 0: i++;
 
-  alvik.get_orientation(sValues[i][0], sValues[i][1], sValues[i][2]);
+  alvik.get_wheels_speed(sValues[i][0], sValues[i][1]);
 
   Serial.print(sValues[i][0]);
   Serial.print("\t");
-  Serial.print(sValues[i][1]);
-  Serial.print("\t");
-  Serial.println(sValues[i][2]);
+  Serial.println(sValues[i][1]);
 
   delay(100);
 }
