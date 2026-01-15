@@ -19,6 +19,7 @@ void loop() {
   }*/
 
   /******ODER wie folgt für alles auf einer Linie******/
+  char buff [50];
   sprintf(buff, "%f\t%f\t", sValues[0][0], sValues[0][1]);
   Serial.println(buff);
 
