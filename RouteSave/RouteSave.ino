@@ -2,15 +2,13 @@
 static Arduino_Alvik alvik;
 
 void randomDrive();
-void randomDrive();
-
-float sValues[10][9];
-
+void savedrive();
 
 
 void setup(){
   Serial.begin(115200);
   alvik.begin();
+  float sValues[9];
 }
 void loop(){
   //alvik.get_orientation(sValues[0], sValues[1], sValues[2]); // Nur Yaw-Value (i=2) wird verwendet werden (ist die Rotation vom Start auf der Z-Achse)
