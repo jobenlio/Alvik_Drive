@@ -26,13 +26,11 @@ void setup(){
 * @brief Super loop function.
 */
 void loop(){
-
-  Serial.print("WHY????");
 static char startBool = 1;
   if(startBool == 1){
     startBool = 0;
     for (int in= 0;in<100;in++ ){
-    alvik.drive(5, 45);   // Alvik drives in a Circle with an angle of 45 deg/s
+    alvik.drive(7, 90);   // Alvik drives in a Circle with an angle of 45 deg/s
     savedrive();          // Saving the current values of the lin. and angular velocity
     delay(100);
     }
